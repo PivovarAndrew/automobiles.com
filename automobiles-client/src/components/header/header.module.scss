@@ -10,4 +10,41 @@ nav {
     height: 60px;
     top: 0;
     z-index: 10;
+
+    .title {
+        margin: 0px 30px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    h1 {
+        margin: auto;
+        margin-left: 100%;
+        font-size: 40px;
+        font-style: oblique;
+        color: white;
+    }
+
+    img {
+        margin: auto;
+        margin-left: 100%;
+        max-width: 32px;
+        max-height: 32px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0px 30px;
+        font-size: 18px;
+        transition: 0.1s;
+
+        &:hover {
+            transition: 0.1s;
+            transform: scale(1.25);
+
+            &:has(svg) {
+                transform: none;
+            }
+        }
+    }
 }
