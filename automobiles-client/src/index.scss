@@ -19,6 +19,22 @@ body {
   min-height: 100vh;
 }
 
+@mixin text-color {
+  @if (background-color==var(--text-dark)) {
+    color: var(--text-white)
+  }
+
+  @else {
+    color: var(--text-dark)
+  }
+}
+
+a {
+  @include text-color;
+
+  text-decoration: none !important;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
