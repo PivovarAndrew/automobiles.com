@@ -7,7 +7,7 @@ nav {
     color: white;
     background-color: var(--theme-color);
 
-    height: 60px;
+    height: 64px;
     top: 0;
     z-index: 10;
 
@@ -18,18 +18,14 @@ nav {
     }
 
     h1 {
-        margin: auto;
         margin-left: 100%;
-        font-size: 40px;
         font-style: oblique;
-        color: white;
-    }
 
-    img {
-        margin: auto;
-        margin-left: 100%;
-        max-width: 32px;
-        max-height: 32px;
+        img {
+            vertical-align: middle;
+            max-width: 45px;
+            max-height: 45px;
+        }
     }
 
     li {
