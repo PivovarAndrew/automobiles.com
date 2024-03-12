@@ -18,3 +18,29 @@ body {
   position: relative;
   min-height: 100vh;
 }
+
+@mixin text-color {
+  @if (background-color==var(--text-dark)) {
+    color: var(--text-white)
+  }
+
+  @else {
+    color: var(--text-dark)
+  }
+}
+
+a {
+  @include text-color;
+
+  text-decoration: none !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --theme-color: rgb(28, 28, 28);
+  --section-color: rgb(46, 6, 120);
+  --link-color: rgb(46, 66, 97);
+}

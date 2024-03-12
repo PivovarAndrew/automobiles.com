@@ -1,0 +1,46 @@
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    background-color: var(--theme-color);
+
+    height: 64px;
+    top: 0;
+    z-index: 10;
+
+    .title {
+        margin: 0px 30px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    h1 {
+        margin-left: 100%;
+        font-style: oblique;
+
+        img {
+            vertical-align: middle;
+            max-width: 45px;
+            max-height: 45px;
+        }
+    }
+
+    li {
+        display: inline-block;
+        margin: 0px 30px;
+        font-size: 18px;
+        transition: 0.1s;
+
+        &:hover {
+            transition: 0.1s;
+            transform: scale(1.25);
+
+            &:has(svg) {
+                transform: none;
+            }
+        }
+    }
+}
