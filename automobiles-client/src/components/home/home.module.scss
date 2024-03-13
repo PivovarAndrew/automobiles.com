@@ -14,4 +14,37 @@
             text-align: center;
         }
     }
+
+    section {
+        background-color: var(--section-color);
+        max-width: 88%;
+        margin: 20px auto;
+        margin-bottom: 20px !important;
+
+        padding: 1rem 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 5px 5px 20px #6d6b6b6b;
+
+        p {
+            font-size: 2em;
+            color: #F3DEFF;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+    }
+
+    .group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-content: center;
+        gap: 40px;
+
+        section {
+            min-width: 600px;
+            max-width: 600px;
+            margin: 0;
+        }
+
+    }
 }
