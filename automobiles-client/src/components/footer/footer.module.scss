@@ -1,0 +1,80 @@
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+
+    position: absolute;
+    bottom: -5%;
+
+    background-color: var(--theme-color);
+    color: white;
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 5%;
+        margin-right: 4%;
+
+        section {
+            &:has(img) {
+                max-width: 20%;
+                min-width: 20%;
+                margin-right: 7%;
+                margin-left: 5%;
+            }
+
+            min-width: 32%;
+            max-width: 37%;
+
+            img {
+                height: 90%;
+                width: 90%;
+
+                &~.logoTitle {
+                    font-size: 20px;
+                    font-style: bold;
+                    text-transform: uppercase;
+                }
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                margin-bottom: 7%;
+                text-transform: uppercase;
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                text-align: left;
+                left: 0;
+
+                li {
+                    font-size: 20px;
+                    display: flex;
+
+                    &>svg {
+                        width: 10%;
+                        height: 10%;
+                        margin-right: 5%;
+                    }
+
+                    &>label {
+                        margin-top: 2%;
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+}
