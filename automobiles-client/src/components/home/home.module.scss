@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+
+    .hero {
+        padding: 30px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 20vh;
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0 90px;
+            text-align: center;
+        }
+    }
+}
