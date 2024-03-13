@@ -6,6 +6,12 @@ import { FaYoutube, FaTelegram, FaTiktok, FaInstagram } from "react-icons/fa6";
 const Footer = () => {
     return (
         <footer>
+            <div className={styles.parralax}>
+                <div className={styles.trees}></div>
+                <div className={styles.secondplan}></div>
+                <div className={styles.premierplan}></div>
+                <div className={styles.voiture}></div>
+            </div>
             <div className={styles.container}>
                 <section>
                     <img src={logo}></img>
