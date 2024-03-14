@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className={styles.logoTitle}>automobiles.com</div>
                 </section>
                 <section>
-                    <h3>Наши соц сети</h3>
+                    <h4>Наши соц сети</h4>
                     <ul >
                         <li>
                             <FaYoutube className={styles.youtube} />
@@ -40,7 +40,7 @@ const Footer = () => {
                     </ul>
                 </section>
                 <section>
-                    <h3>Контакты</h3>
+                    <h4>Контакты</h4>
                     <ul>
                         <li>
                             Почтовый адрес: automobiles@gmail.com

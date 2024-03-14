@@ -26,13 +26,13 @@ const Carousel = () => {
                 onSlideChange={() => console.log('slide change')}
             >
                 <SwiperSlide className={styles.slide}>
-                    <img src={image1} />
+                    <img src={image2} />
                     <section>
                         <p>Покупка автомобиля является долгим и трудоёмким процессом</p>
                     </section>
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
-                    <img src={image2} />
+                    <img src={image1} />
                     <section>
                         <p>Доверьте всю работу по пригону и оформлению команде трудолюбивых профессионалов</p>
                     </section>
