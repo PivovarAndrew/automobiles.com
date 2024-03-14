@@ -1,3 +1,4 @@
+import styles from './loading.module.scss'
 import { ImSpinner2 } from 'react-icons/im';
 
 /**
@@ -6,7 +7,7 @@ import { ImSpinner2 } from 'react-icons/im';
  * @return { ReactElement } The loading.
  */
 const Loading = () => (
-    <ImSpinner2 />
+    <ImSpinner2 className={styles.spinner} />
 )
 
 export default Loading;
