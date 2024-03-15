@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './footer.module.scss';
 import logo from 'logo.svg';
 import { FaYoutube, FaTelegram, FaTiktok, FaInstagram } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -18,7 +19,7 @@ const Footer = () => {
                     <div className={styles.logoTitle}>automobiles.com</div>
                 </section>
                 <section>
-                    <h3>Наши соц сети</h3>
+                    <h4>Наши соц сети</h4>
                     <ul >
                         <li>
                             <FaYoutube className={styles.youtube} />
@@ -39,20 +40,19 @@ const Footer = () => {
                     </ul>
                 </section>
                 <section>
-                    <h3>Контакты</h3>
+                    <h4>Контакты</h4>
                     <ul>
                         <li>
-                            <a href="automobiles@gmail.com">
-                                Почтовый адрес: automobiles@gmail.com
-                            </a>
+                            Почтовый адрес: automobiles@gmail.com
                         </li>
                         <li>
-                            <a href="tel:+375441001010">Телефон: +375 (44) 100 10 10</a>
+                            Телефон:&nbsp;
+                            <Link to="tel:+375441001010">
+                                +375 (44) 100 10 10
+                            </Link>
                         </li>
                         <li>
-                            <a href="automobiles@gmail.com">
-                                Физический адрес: г. Москва, проспект Пушкина 15, офис 451
-                            </a>
+                            Физический адрес: г. Москва, пр-т Пушкина 15, офис 451
                         </li>
                     </ul>
                 </section>

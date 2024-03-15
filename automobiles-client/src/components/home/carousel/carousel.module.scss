@@ -1,0 +1,26 @@
+.container {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+
+    .swiper {
+        margin-bottom: 10%;
+    }
+
+    .slide {
+        display: flex;
+        justify-content: space-evenly;
+
+        section {
+            background-color: var(--green-section-color);
+            margin-right: 5%;
+            border-radius: 0px 10px 10px 0px;
+        }
+
+        img {
+            max-width: 55%;
+            max-height: 55%;
+            margin-left: 3%;
+        }
+    }
+}

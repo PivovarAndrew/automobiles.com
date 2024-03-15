@@ -1,0 +1,120 @@
+.container {
+    position: relative;
+
+    .hero {
+        padding: 30px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 20vh;
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0 90px;
+            text-align: center;
+        }
+    }
+
+    section {
+        background-color: var(--classic-section-color);
+        max-width: 88%;
+        margin: 0px auto;
+        margin-bottom: 20px !important;
+
+        padding: 1rem 2rem;
+        border-radius: 0.8rem;
+        box-shadow: 5px 5px 20px #6d6b6b6b;
+
+        p {
+            font-size: 2em;
+            color: #F3DEFF;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        &.green {
+            background-color: var(--green-section-color);
+        }
+
+        &.yellow {
+            background-color: var(--yellow-section-color);
+        }
+    }
+
+    .group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-content: center;
+        gap: 40px;
+
+        section {
+            min-width: 600px;
+            max-width: 600px;
+            margin: 0;
+        }
+    }
+
+    .infoBlock {
+        position: relative;
+        width: 95%;
+        height: 100%;
+        margin: 5% 5%;
+
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 10%;
+
+        img {
+            height: 90%;
+            width: 120%;
+            max-height: 60vh;
+        }
+
+        .info {
+            min-height: 20vh;
+            position: relative;
+            text-align: left;
+            width: 75%;
+
+            padding: 30px;
+            padding-top: 10px;
+
+            .name {
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 5%;
+            }
+
+            p {
+                font-size: 28px;
+                color: var(--theme-color);
+                margin: 20px auto;
+            }
+
+            button {
+                background-color: white;
+                margin-top: 10%;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: none;
+                width: 550px;
+
+                &:hover {
+                    background-color: var(--theme-color);
+                    color: white;
+                    box-shadow: 0.4rem 0.4rem 0 rgb(28, 28, 28, 0.3);
+                    border-color: var(--theme-color);
+                    transform: translate(-0.4rem, -0.4rem);
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: 28px;
+        font-weight: 400;
+        color: var(--theme-color);
+    }
+}

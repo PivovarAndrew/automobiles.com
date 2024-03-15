@@ -35,12 +35,82 @@ a {
   text-decoration: none !important;
 }
 
+p {
+  animation: fadeIn 0.6s;
+}
+
+h3 {
+  font-size: 34px;
+  color: var(--theme-color);
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.4);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+button {
+  color: var(--theme-color);
+  font-family: inherit;
+  border-radius: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: white;
+  width: 700px;
+  padding: 0.3rem 3.4rem;
+  border: 3px solid black;
+  margin-right: 1rem;
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
+
+  margin-top: 2%;
+
+  &:hover {
+    background-color: var(--theme-color);
+    color: white;
+    box-shadow: 0.4rem 0.4rem 0 rgb(28, 28, 28, 0.3);
+    border-color: var(--theme-color);
+    transform: translate(-0.4rem, -0.4rem);
+  }
+}
+
+a>button {
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+
+  &:hover {
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
 
 :root {
   --theme-color: rgb(28, 28, 28);
-  --section-color: rgb(46, 6, 120);
+  //--section-color: rgb(46, 6, 120);
+  --classic-section-color: rgb(204, 0, 0);
+  --yellow-section-color: rgb(195,146,0);
+  --green-section-color: rgb(39, 81, 57);
   --link-color: rgb(46, 66, 97);
 }
