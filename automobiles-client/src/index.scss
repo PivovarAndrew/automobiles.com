@@ -46,8 +46,8 @@ h3 {
 
 @keyframes fadeIn {
   0% {
-    transform: scale(0);
-    opacity: 0.0;
+    transform: scale(0.4);
+    opacity: 0.2;
   }
 
   100% {
@@ -57,7 +57,7 @@ h3 {
 }
 
 button {
-  color: rgb(28, 28, 28);
+  color: var(--theme-color);
   font-family: inherit;
   border-radius: 16px;
   font-size: 32px;
@@ -75,13 +75,11 @@ button {
   margin-top: 2%;
 
   &:hover {
-    box-shadow: 0.4rem 0.4rem 0 black;
+    background-color: var(--theme-color);
+    color: white;
+    box-shadow: 0.4rem 0.4rem 0 rgb(28, 28, 28, 0.3);
+    border-color: var(--theme-color);
     transform: translate(-0.4rem, -0.4rem);
-  }
-
-  &:active {
-    box-shadow: 0 0 0 black;
-    transform: translate(0, 0);
   }
 }
 

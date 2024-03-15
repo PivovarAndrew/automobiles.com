@@ -18,7 +18,7 @@
     section {
         background-color: var(--classic-section-color);
         max-width: 88%;
-        margin: 20px auto;
+        margin: 0px auto;
         margin-bottom: 20px !important;
 
         padding: 1rem 2rem;
@@ -93,7 +93,6 @@
             }
 
             button {
-                background-color: var(--theme-color);
                 background-color: white;
                 margin-top: 10%;
                 font-size: 24px;
@@ -101,6 +100,14 @@
                 letter-spacing: 1px;
                 text-transform: none;
                 width: 550px;
+
+                &:hover {
+                    background-color: var(--theme-color);
+                    color: white;
+                    box-shadow: 0.4rem 0.4rem 0 rgb(28, 28, 28, 0.3);
+                    border-color: var(--theme-color);
+                    transform: translate(-0.4rem, -0.4rem);
+                }
             }
         }
     }
