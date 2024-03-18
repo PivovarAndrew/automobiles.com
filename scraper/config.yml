@@ -1,0 +1,16 @@
+url_address: "https://rus.auto24.ee/kasutatud/nimekiri.php?bn=2&a=100&ae=8&af=100&otsi=%D0%BF%D0%BE%D0%B8%D1%81%D0%BA&ak="
+vehicles_count_on_page: 100
+css_selectors:
+  vehicles_count: "strong"
+css_classes:
+  image: ".thumb"
+  name: ".main > span:not([class])"
+  model: ".main .model"
+  engine: ".main .engine"
+  price: ".price"
+  year: ".year"
+  mileage: ".mileage"
+  fuel: ".fuel"
+  transmission: ".transmission"
+  bodytype: ".bodytype"
+  drive: ".drive"
