@@ -49,6 +49,10 @@ class WebScraper
     end
   end
 
+  def scrape_pages_count
+    @document.css(@web_site_info["css_selectors"]["vehicles_count"])[0].text.to_i
+  end
+
   def scrape_text(css_class)
     @document.css(css_class).map { |element| element.text }
   end
