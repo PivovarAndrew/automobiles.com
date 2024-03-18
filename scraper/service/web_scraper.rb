@@ -14,6 +14,12 @@ class WebScraper
     @web_site_info = web_site_info
   end
 
+  def scrape_web_site
+    base_url = URI.parse(@web_site_info["url_address"])
+    prepare_document(base_url)
+      scrape_page
+  end
+
   private
 
   def scrape_page
