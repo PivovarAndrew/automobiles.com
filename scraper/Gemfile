@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+
+# Makes it easy and painless to work with XML and HTML
+gem "nokogiri", "~> 1.16", ">= 1.16.3"
+# Parse YAML safely
+gem "safe_yaml", "~> 1.0", ">= 1.0.5"
