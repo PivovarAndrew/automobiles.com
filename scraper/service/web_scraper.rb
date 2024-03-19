@@ -14,10 +14,18 @@ class WebScraper
     @web_site_info = web_site_info
   end
 
+  FIRST_PAGE_NUMBER = 1
+
   def scrape_web_site
     base_url = URI.parse(@web_site_info["url_address"])
     prepare_document(base_url)
-      scrape_page
+    pages_count = scrape_pages_count / @web_site_info["vehicles_count_on_page"]
+    (FIRST_PAGE_NUMBER..pages_count).reduce([]) do |memo, page_number|
+      url = URI.parse("#{base_url}#{page_number * @web_site_info["vehicles_count_on_page"]}")
+      prepare_document(url)
+      puts "#{(page_number.to_f / pages_count * 100).round(2)} %"
+      memo.concat(scrape_page)
+    end
   end
 
   private
