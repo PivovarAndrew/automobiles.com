@@ -3,6 +3,7 @@ GEM
   specs:
     csv (3.2.8)
     ishin (0.4.0)
+    json (2.7.1)
     nokogiri (1.16.3-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.3-arm-linux)
@@ -31,6 +32,7 @@ PLATFORMS
 DEPENDENCIES
   csv (~> 3.2, >= 3.2.8)
   ishin (~> 0.4.0)
+  json (~> 2.7, >= 2.7.1)
   nokogiri (~> 1.16, >= 1.16.3)
   nokogiri-styles (~> 0.1.0)
   safe_yaml (~> 1.0, >= 1.0.5)
