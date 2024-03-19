@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    csv (3.2.8)
     ishin (0.4.0)
     nokogiri (1.16.3-aarch64-linux)
       racc (~> 1.4)
@@ -28,6 +29,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  csv (~> 3.2, >= 3.2.8)
   ishin (~> 0.4.0)
   nokogiri (~> 1.16, >= 1.16.3)
   nokogiri-styles (~> 0.1.0)
